@@ -6,7 +6,8 @@
 //
 
 import Foundation
+
 //1000번 문제
-//print("Hello, World!")
+print("Hello, World!")
 
 
