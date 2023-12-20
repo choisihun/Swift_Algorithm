@@ -27,7 +27,7 @@ import Foundation
 //10998번 문제
 //let line = readLine()!
 //let lineArr = line.components(separatedBy: " ")
-//let a = Int(lineArr[0])! 
+//let a = Int(lineArr[0])!
 //let b = Int(lineArr[1])!
 //print(a*b)
 
@@ -46,3 +46,6 @@ import Foundation
 //print(a/b)
 //print(a%b)
 
+//10926번 문제
+let name = readLine()!
+print("\(name)??!")
