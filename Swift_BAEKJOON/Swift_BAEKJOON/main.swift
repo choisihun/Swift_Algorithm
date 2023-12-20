@@ -57,3 +57,21 @@ import Foundation
 //} else {
 //    print("Int 변환에 실패하였습니다.")
 //}
+
+//10430번 문제
+///형 변환하고 일렬로 입력 받는게 이렇게 오래 코드가 길어야 될 일이냐구...
+//if let input = readLine() {
+//    let numbers = input.split(separator: " ").compactMap { Int($0) }
+//
+//    if numbers.count == 3 {
+//        let (a, b, c) = (numbers[0], numbers[1], numbers[2])
+//        print((a + b) % c)
+//        print(((a%c) + (b%c))%c)
+//        print((a*b)%c)
+//        print(((a%c) * (b%c))%c)
+//    } else {
+//        print("Int 변환에 실패하였습니다")
+//    }
+//} else {
+//    print("입력이 잘못 되었습니다.")
+//}
