@@ -47,5 +47,13 @@ import Foundation
 //print(a%b)
 
 //10926번 문제
-let name = readLine()!
-print("\(name)??!")
+//let name = readLine()!
+//print("\(name)??!")
+
+//18108번 문제
+//let year = readLine()!
+//if let intValue = Int(year) {
+//    print("\(intValue - 543)")
+//} else {
+//    print("Int 변환에 실패하였습니다.")
+//}
