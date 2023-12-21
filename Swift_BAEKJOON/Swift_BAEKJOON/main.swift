@@ -96,11 +96,26 @@ import Foundation
 //}
 
 //2753
+//if let input = readLine() {
+//    let year = Int(input)!
+//    if year % 4 == 0, year % 400 == 0  {
+//        print(1)
+//    } else {
+//        print(0)
+//    }
+//}
+
+//1330
 if let input = readLine() {
-    let year = Int(input)!
-    if year % 4 == 0, year % 400 == 0  {
-        print(1)
-    } else {
-        print(0)
+    let numbers = input.split(separator: " ").compactMap { Int($0) }
+    if numbers.count == 2 {
+        let (a, b) = (numbers[0], numbers[1])
+        if a > b {
+            print(">")
+        } else if a == b {
+            print("==")
+        } else {
+            print("<")
+        }
     }
 }
