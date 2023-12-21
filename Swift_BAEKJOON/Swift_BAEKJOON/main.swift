@@ -77,20 +77,30 @@ import Foundation
 //}
 
 //9498
+//if let input = readLine() {
+//    let score = Int(input)!
+//    switch score {
+//    case 90...100:
+//        print("A")
+//    case 80...89:
+//        print("B")
+//    case 70...79:
+//        print("C")
+//    case 60...69:
+//        print("D")
+//    default:
+//        print("F")
+//    }
+//} else {
+//    print("입력이 잘못 되었습니다.")
+//}
+
+//2753
 if let input = readLine() {
-    let score = Int(input)!
-    switch score {
-    case 90...100:
-        print("A")
-    case 80...89:
-        print("B")
-    case 70...79:
-        print("C")
-    case 60...69:
-        print("D")
-    default:
-        print("F")
+    let year = Int(input)!
+    if year % 4 == 0, year % 400 == 0  {
+        print(1)
+    } else {
+        print(0)
     }
-} else {
-    print("입력이 잘못 되었습니다.")
 }
