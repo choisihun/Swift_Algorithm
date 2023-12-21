@@ -106,16 +106,30 @@ import Foundation
 //}
 
 //1330
-if let input = readLine() {
-    let numbers = input.split(separator: " ").compactMap { Int($0) }
-    if numbers.count == 2 {
-        let (a, b) = (numbers[0], numbers[1])
-        if a > b {
-            print(">")
-        } else if a == b {
-            print("==")
-        } else {
-            print("<")
-        }
-    }
-}
+//if let input = readLine() {
+//    let numbers = input.split(separator: " ").compactMap { Int($0) }
+//    if numbers.count == 2 {
+//        let (a, b) = (numbers[0], numbers[1])
+//        if a > b {
+//            print(">")
+//        } else if a == b {
+//            print("==")
+//        } else {
+//            print("<")
+//        }
+//    }
+//}
+
+//2588
+var inputA = Int(readLine()!)!
+var inputB = Int(readLine()!)!
+
+var a: Int = (inputA*(inputB%10))
+var b: Int = (inputA*((inputB%100)/10))
+var c: Int = (inputA*(inputB/100))
+var d: Int = (inputA*inputB)
+
+print(a)
+print(b)
+print(c)
+print(d)
