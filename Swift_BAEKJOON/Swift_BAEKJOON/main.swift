@@ -98,18 +98,18 @@ import Foundation
 //2753
 //if let input = readLine() {
 //    let year = Int(input)!
-//    if year % 4 == 0, year % 400 == 0  {
+//    if year % 4 == 0, year % 400 == 0 || year % 100 != 0  {
 //        print(1)
 //    } else {
 //        print(0)
 //    }
 //}
-
+//
 //1330
 //if let input = readLine() {
 //    let numbers = input.split(separator: " ").compactMap { Int($0) }
 //    if numbers.count == 2 {
-//        let (a, b) = (numbers[0], numbers[1])
+//        let (a, b) = (numbers[0], numbers[1])ㅌ
 //        if a > b {
 //            print(">")
 //        } else if a == b {
@@ -121,15 +121,88 @@ import Foundation
 //}
 
 //2588
-var inputA = Int(readLine()!)!
-var inputB = Int(readLine()!)!
+//let inputA = Int(readLine()!)!
+//let inputB = Int(readLine()!)!
+//
+//let a: Int = (inputA*(inputB%10))
+//let b: Int = (inputA*((inputB%100)/10))
+//let c: Int = (inputA*(inputB/100))
+//let d: Int = (inputA*inputB)
+//
+//print(a)
+//print(b)
+//print(c)
+//print(d)
 
-var a: Int = (inputA*(inputB%10))
-var b: Int = (inputA*((inputB%100)/10))
-var c: Int = (inputA*(inputB/100))
-var d: Int = (inputA*inputB)
+//11382
 
-print(a)
-print(b)
-print(c)
-print(d)
+//if let input = readLine() {
+//    let numbers = input.split(separator: " ").compactMap { Int($0) }
+//        if numbers.count == 3 {
+//        let (a, b, c) = (numbers[0], numbers[1], numbers[2])
+//            print(a + b + c)
+//    }
+//}
+
+//10171
+//let cat = #"""
+//\    /\
+// )  ( ')
+//(  /  )
+// \(__)|
+//"""#
+//
+//print(cat)
+
+//10172
+//let dog = #"""
+//|\_/|
+//|q p|   /}
+//( 0 )"""\
+//|"^"`    |
+//||_/=\\__|
+//"""#
+//print(dog)
+
+//14681
+//let inputA = Int(readLine()!)!
+//let inputB = Int(readLine()!)!
+//
+//if inputA > 0 && inputB > 0 {
+//    print(1)
+//} else if inputA > 0 && inputB < 0 {
+//    print(4)
+//} else if inputA < 0 && inputB < 0 {
+//    print(3)
+//} else {
+//    print(2)
+//}
+
+//2884
+//let input = readLine()!.split(separator: " ").map{ Int($0)! }
+//var hour = input[0]
+//var minute = input[1]
+//
+//if minute < 45 && minute != 45 {
+//    if hour == 0 {
+//        hour = 23
+//       } else {
+//           hour = hour - 1
+//       }
+//       
+//    minute = minute + 15
+//} else {
+//    minute = minute - 45
+//}
+//
+//print(hour, minute)
+
+//2525
+if let input = readLine() {
+    let addTime = input.split(separator: " ").compactMap { Int($0) }
+    let input = readLine()
+            if addTime.count == 2 {
+                let time = (hour * 60 + min + Int(readLine()!)!) % (60 * 24)
+            print(time / 60, time % 60)
+        }
+    }
